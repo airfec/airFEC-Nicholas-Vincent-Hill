@@ -1,0 +1,22 @@
+{
+  "name": "nickproxyfec",
+  "version": "1.0.0",
+  "description": "integrated airfec project via proxy server",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airfec/nick-proxy.git"
+  },
+  "author": "Nicholas Vincent-Hill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/airfec/nick-proxy/issues"
+  },
+  "homepage": "https://github.com/airfec/nick-proxy#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
