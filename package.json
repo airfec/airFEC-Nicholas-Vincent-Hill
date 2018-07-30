@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/airfec/nick-proxy#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "http-proxy-middleware": "^0.18.0"
   }
 }
