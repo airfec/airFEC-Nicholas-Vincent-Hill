@@ -2,14 +2,71 @@ body {
   padding: 0;
 }
 
-#info {
-  width: 80%;
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  #content-container {
+    display: grid;
+    grid-template-columns: [first] 1fr [end];
+    grid-template-rows: [first] auto [second] auto [third] auto [end];
+  }
+
+  #booking {
+    display: none;
+  }
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  #content-container {
+    display: grid;
+    grid-template-columns: [first] 1fr [end];
+    grid-template-rows: [first] auto [second] auto [third] auto [end];
+  }
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  #content-container {
+    display: grid;
+    grid-template-columns: [first] 1fr [end];
+    grid-template-rows: [first] auto [second] auto [third] auto [end];
+  }
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  #content-container {
+    grid-template-columns: [first] 25% [second] 50% [third] 25% [end];
+    grid-template-rows: [first] auto [second] auto [third] auto [end];
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  #content-container {
+    grid-template-columns: [first] 17.5% [second] 40% [third] 25% [fourth] 17.5% [end];
+    grid-template-rows: [first] auto [second] auto [third] auto [end];
+  }
+
+  #booking {
+    display: inline-block;
+    grid-column-start: third;
+    grid-column-end: fourth;
+    grid-row-start: first;
+    grid-row-end: third;
+
+    padding-top: 2rem;
+    padding-left: 2.5rem;
+    position: sticky;
+    top: 0;
+  }
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+  #content-container {
+    grid-template-columns: [first] 17.5% [second] 40% [third] 25% [fourth] 17.5% [end];
+    grid-template-rows: [first] auto [second] auto [third] auto [end];
+  }
 }
 
-#content-container {
-  display: grid;
-  grid-template-columns: [first] 17.5% [second] 40% [third] 25% [fourth] 17.5% [end];
-  grid-template-rows: [first] auto [second] auto [third] auto [end];
+#info {
+  width: 100%;
 }
 
 #info {
