@@ -8,7 +8,7 @@ body {
 
 #content-container {
   display: grid;
-  grid-template-columns: [first] 25vmin [second] 1fr [third] 1fr [fourth] auto [end];
+  grid-template-columns: [first] 17.5% [second] 40% [third] 25% [fourth] 17.5% [end];
   grid-template-rows: [first] auto [second] auto [third] auto [end];
 }
 
@@ -23,9 +23,12 @@ body {
   grid-column-start: third;
   grid-column-end: fourth;
   grid-row-start: first;
-  grid-row-end: second;
+  grid-row-end: third;
 
   padding-top: 2rem;
+  padding-left: 2rem;
+  position: sticky;
+  top: 0;
 }
 
 #availability {
