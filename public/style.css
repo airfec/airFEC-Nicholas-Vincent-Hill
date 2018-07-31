@@ -5,3 +5,39 @@ body {
 #info {
   width: 80%;
 }
+
+#content-container {
+  display: grid;
+  grid-template-columns: [first] 25vmin [second] 1fr [third] 1fr [fourth] auto [end];
+  grid-template-rows: [first] auto [second] auto [third] auto [end];
+}
+
+#info {
+  grid-column-start: second;
+  grid-column-end: third;
+  grid-row-start: first;
+  grid-row-end: second;
+}
+
+#booking {
+  grid-column-start: third;
+  grid-column-end: fourth;
+  grid-row-start: first;
+  grid-row-end: second;
+
+  padding-top: 2rem;
+}
+
+#availability {
+  grid-column-start: second;
+  grid-column-end: third;
+  grid-row-start: second;
+  grid-row-end: third;
+}
+
+#reviews {
+  grid-column-start: second;
+  grid-column-end: third;
+  grid-row-start: third;
+  grid-row-end: fourth;
+}
