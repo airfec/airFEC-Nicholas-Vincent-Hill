@@ -1,6 +1,10 @@
 const express = require("express");
 const proxy = require("http-proxy-middleware");
 const path = require("path");
+
+// Load the SDK
+const AWS = require("aws-sdk");
+
 const app = express();
 
 app.get("/", function(req, res) {
