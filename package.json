@@ -20,5 +20,8 @@
     "aws-sdk": "^2.283.1",
     "express": "^4.16.3",
     "http-proxy-middleware": "^0.18.0"
+  },
+  "devDependencies": {
+    "grunt-aws-s3": "^2.0.0"
   }
 }

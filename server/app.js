@@ -4,6 +4,8 @@ const path = require("path");
 
 // Load the SDK
 const AWS = require("aws-sdk");
+// Set the region
+// AWS.config.update({region: 'REGION'});
 
 const app = express();
 
