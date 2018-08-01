@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+
+  proxy:
+    build: .
+    ports:
+      - '3000:3000'
+
+  booking:
+    image: airfec/booking
+    ports:
+      - '3001:3001'
+
+  # secondcomponent:
+  #   image: airfec/booking
+  #   ports:
+  #     - '3002:3002'
+
+  # thirdcomponent:
+  #   image: airfec/booking
+  #   ports:
+  #     - '3003:3003'
+
+  # fourthcomponent:
+  #   image: airfec/booking
+  #   ports:
+  #     - '3004:3004'
