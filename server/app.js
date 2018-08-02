@@ -19,7 +19,7 @@ app.get("/rooms/:id", function(req, res) {
 app.use(
   "/api/rooms/:id/bookings",
   proxy({
-    target: "http://127.0.0.1:3001"
+    target: "http://ec2-54-215-167-214.us-west-1.compute.amazonaws.com"
     // changeOrigin: true
   })
 );

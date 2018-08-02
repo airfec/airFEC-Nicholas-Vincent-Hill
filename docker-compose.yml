@@ -7,10 +7,12 @@ services:
     ports:
       - '3000:3000'
 
-  booking:
-    image: airfec/booking
-    ports:
-      - '3001:3001'
+  # booking:
+  #   image: airfec/nick_booking
+  #   depends_on:
+  #     - 'database'
+  #   ports:
+  #     - '3001:3001'
 
   # secondcomponent:
   #   image: airfec/booking
@@ -26,3 +28,8 @@ services:
   #   image: airfec/booking
   #   ports:
   #     - '3004:3004'
+
+  database:
+    image: mongo:latest
+    ports:
+      - '27017:27017'

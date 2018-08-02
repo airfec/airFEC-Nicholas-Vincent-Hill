@@ -4,7 +4,8 @@
   "description": "integrated airfec project via proxy server",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server/app.js"
+    "start": "nodemon server/app.js",
+    "start:prod": "node server/app.js"
   },
   "repository": {
     "type": "git",
