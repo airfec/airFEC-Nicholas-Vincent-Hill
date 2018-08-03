@@ -28,7 +28,7 @@ app.use(
 app.use(
   "/api/rooms/:id/photos",
   proxy({
-    target: "http://127.0.0.1:3004",
+    target: "http://ec2-13-57-204-61.us-west-1.compute.amazonaws.com",
     changeOrigin: true
   })
 );
@@ -37,7 +37,7 @@ app.use(
 app.use(
   "/api/rooms/:id/reviews",
   proxy({
-    target: "http://127.0.0.1:3002"
+    target: "http://ec2-54-183-152-199.us-west-1.compute.amazonaws.com"
     // changeOrigin: true
   })
 );
@@ -46,7 +46,7 @@ app.use(
 app.use(
   "/api/rooms/:id",
   proxy({
-    target: "http://127.0.0.1:3003"
+    target: "http://ec2-18-220-233-85.us-east-2.compute.amazonaws.com"
     // changeOrigin: true
   })
 );
