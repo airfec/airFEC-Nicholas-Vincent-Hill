@@ -13,6 +13,10 @@ body {
   #booking {
     display: none;
   }
+
+  #photo {
+    display: none;
+  }
 }
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
@@ -28,6 +32,10 @@ body {
     display: grid;
     grid-template-columns: [first] 1fr [end];
     grid-template-rows: [first] auto [second] auto [third] auto [end];
+  }
+
+  #photo {
+    display: block;
   }
 }
 @media (min-width: 961px) {
