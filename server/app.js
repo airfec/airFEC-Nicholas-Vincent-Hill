@@ -1,8 +1,10 @@
 const express = require("express");
 const proxy = require("http-proxy-middleware");
 const path = require("path");
+var compression = require("compression");
 
 const app = express();
+app.use(compression());
 
 app.get("/", function(req, res) {
   res.redirect("/rooms/1");

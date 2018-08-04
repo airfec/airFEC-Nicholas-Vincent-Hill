@@ -19,6 +19,7 @@
   "homepage": "https://github.com/airfec/nick-proxy#readme",
   "dependencies": {
     "aws-sdk": "^2.283.1",
+    "compression": "^1.7.3",
     "express": "^4.16.3",
     "http-proxy-middleware": "^0.18.0"
   }
