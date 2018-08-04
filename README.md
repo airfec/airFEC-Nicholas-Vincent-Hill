@@ -21,7 +21,7 @@
 
 ## Technology stack
 
-> A full stack react app built with the philosophy of continuously-integrated, test-driven development.
+> A MERN-stack app built with the philosophy of continuously-integrated, test-driven development and micro-service architecture.
 
 - CSS
 - HTML5
