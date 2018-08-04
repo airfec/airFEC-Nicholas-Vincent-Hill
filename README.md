@@ -34,9 +34,9 @@
 - Enzyme
 - CircleCI
 
-- Trello - https://trello.com/b/McTFtwUt/airfec-nick
+- Trello
 
-## Requirements
+### Requirements
 
 All dependencies are listed package.json.
 
@@ -48,7 +48,7 @@ From within the root directory:
 npm install
 ```
 
-## Running locally
+### Running locally
 
 From within the root directory:
 
